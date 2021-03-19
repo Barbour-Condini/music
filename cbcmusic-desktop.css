@@ -1,0 +1,403 @@
+/* universal styling */
+body {
+    background-color: rgb(03, 03, 03);
+    color:            rgb(219, 200, 166);
+    text-align:         center;
+    font-size:          auto;
+    font-family:        "Montserrat", sans-serif;
+    margin:             auto;
+}
+
+h1 {
+    margin: 40px auto 0 auto;
+    max-width: 90%;
+}
+
+ul#nav {
+    list-style-type:    none;
+    padding:            0px;
+    margin:             0px;
+}
+
+ul#nav li {
+    display:            inline;
+    padding:            0px 10px;
+}
+
+ul#nav li a:link, ul#nav li a:visited {
+    text-decoration:    none;
+    color:              rgb(219, 200, 166);
+}
+
+ul#nav li a:hover, div >a:hover {
+    color:              rgb(194, 206, 142);
+    transform:          scale(2.05);
+    transition:         0.5s;
+}
+
+footer {
+    font-size:          0.8em;
+}
+
+a:link {
+    color:              rgb(247, 233, 210);
+    background-color:   transparent;
+    text-decoration:    none;
+}
+
+a:hover {
+    color:              rgb(194, 206, 142);
+    transition:         0.5s;
+    text-decoration:    none;
+}
+
+a:visited {
+    color:              rgb(247, 233, 210);
+    text-decoration:    none;
+}
+
+ul#nav > li#home, ul#nav > li#about, ul#nav > li#ensembles, 
+ul#nav > li#media, ul#nav > li#gallery, ul#nav > li#contact {
+    text-decoration: overline rgb(219, 200, 166);
+    color:              rgb(194, 206, 142);
+}
+
+footer {
+    max-width: 80%;
+    margin: auto;
+}
+
+
+/* home section */
+#home-image {
+    filter: brightness(120%);
+    transition: 3s;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+/*how do I do this transition in reverse?*/
+}
+
+/* about section */
+section#about {
+    text-align:         auto;
+    padding:            20px 40px;
+    max-width:          800px;
+    margin:             auto;
+}
+
+#donors {
+    list-style-type:    none;
+    padding:            0px;
+}
+
+#about-image {
+    border-radius: 50%;
+    width: 30%;
+    min-width: 200px;
+}
+
+/* ensembles */
+.ensemble-logo {
+    max-width: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#all-ensembles {
+    text-align:         auto;
+    padding:            20px 40px;
+    max-width:          600px;
+    margin:             auto;
+}
+
+#parandrus-logo {
+    border-radius: 50%;
+    min-width: 150px;
+}
+
+#chineke-logo {
+    max-width: 150px;
+}
+
+/* media */
+
+/* make the thumbnail positioning responsive with flexbox */
+#all-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 60px auto;
+    max-width: 90%;
+}
+
+.media-clip {
+    padding: 50px 10px;
+    border-radius: 15px;
+    border-style: none;
+    margin: auto;
+}
+
+/* gallery */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+  
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+  
+/* Next & previous buttons */
+.nav-buttons {
+    cursor: pointer;
+    position: static;
+    top: 20%;
+    text-align: center;
+    padding-top: 40px;
+    color: rgb(219, 200, 166);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: transparent;
+}
+  
+  
+.prev, .next {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through  
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 1);
+} */
+  
+  
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    color: rgb(219, 200, 166);
+    max-width: 80%;
+    margin: 2px auto 100px auto;
+}
+  
+/* applies to text element, in this case a p tag 
+    removes space btwn image and caption*/
+#caption {
+    margin-top: 0;
+    font-size: 70%;
+    font-style: italic;
+}
+  
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 1;
+}
+  
+.active,
+.demo:hover,
+.scroll-anchor:hover {
+    opacity: 0.7;
+    transform:  scale(1.02);
+    transition: 0.5s ease-in; /*gen guidance - use ease-in when element's expanding, ease-out when it's contracting */
+    transition-delay: none;
+    transition-property: all; 
+}
+  
+/* make the thumbnail positioning responsive with flexbox */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0px 20px;
+}
+  
+  
+/* control thumbnail image size */
+.demo {
+  padding: 10px;
+  border-radius: 15px;
+  max-height: 300px;
+  max-width: 90%;
+}
+  
+/* control slideshow image size */
+  
+.slidesSize {
+    max-height: 500px; 
+    margin: 10px auto 0 auto; 
+    display: block;
+    max-width: 80%;
+}
+  
+/* scroll to top */
+html {
+    scroll-behavior: smooth;
+}
+  
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.nav-buttons {
+  cursor: pointer;
+  position: static;
+  top: 20%;
+  text-align: center;
+  padding-top: 40px;
+  color: rgb(219, 200, 166);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: transparent;
+}
+
+
+.prev, .next {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through  
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 1);
+} */
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  color: rgb(219, 200, 166);
+  max-width: 80%;
+  margin: 2px auto 100px auto;
+}
+
+/* applies to text element, in this case a p tag 
+  removes space btwn image and caption*/
+#caption {
+  margin-top: 0;
+  font-size: 70%;
+  font-style: italic;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 1;
+}
+
+.active,
+.demo:hover,
+.scroll-anchor:hover {
+  opacity: 0.7;
+  transform:  scale(1.02);
+  transition: 0.5s ease-in; /*gen guidance - use ease-in when element's expanding, ease-out when it's contracting */
+  transition-delay: none;
+  transition-property: all; 
+}
+
+/* make the thumbnail positioning responsive with flexbox */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px 20px;
+}
+
+
+/* control thumbnail image size */
+.demo {
+padding: 10px;
+border-radius: 15px;
+max-height: 300px;
+max-width: 90%;
+}
+
+/* control slideshow image size */
+
+.slidesSize {
+  max-height: 500px; 
+  margin: 10px auto 0 auto; 
+  display: block;
+  max-width: 80%;
+}
+
+/* scroll to top */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* contact */
+.contact-text {
+    position: relative;
+    margin: 50px auto;
+    }
+
+#contact-image {
+    max-width: 20%;
+    min-width: 200px;
+    border-radius: 50%;
+}
+
+.contact-footer {
+    position: relative;
+
+}
+
