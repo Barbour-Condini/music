@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlotte Barbour-Condini</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="icon" href="images/IMG_4685.jpg">
     <script src="gallery.js"></script>
@@ -29,9 +29,9 @@
     </nav>
 
     <!-- Next and previous buttons -->
-    <div class='nav-buttons'>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div id='nav-buttons'>
+        <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a id="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
     <!-- Container for the image gallery -->
@@ -81,7 +81,7 @@
         </div>
 
         <!-- Image text -->
-        <div class="caption-container">
+        <div id="caption-container">
             <p id="caption"></p>
         </div>
 
