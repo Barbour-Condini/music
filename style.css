@@ -270,6 +270,11 @@ html {
     max-width: 80%;
 }
 
+#email {
+    margin: 60px auto;
+    max-width: 100%;
+}
+
 #contact-image {
     max-width: 20%;
     min-width: 200px;
