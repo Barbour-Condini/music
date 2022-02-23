@@ -71,13 +71,10 @@ footer {
 
 /* home section */
 #home-image {
-    filter:         brightness(120%);
-    transition:     3s;
     max-width: 80%;
     width: 1000px;
     display: block;
     margin: 25px auto;
-/*how do I do this transition in reverse?*/
 }
 
 /* about section */
