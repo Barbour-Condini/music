@@ -73,10 +73,10 @@ footer {
 #home-image {
     filter:         brightness(120%);
     transition:     3s;
-    margin:         auto;
-    margin-top:     40px;
-    margin-bottom:  40px;
-    max-width:      90%;
+    max-width: 80%;
+    width: 1000px;
+    display: block;
+    margin: 25px auto;
 /*how do I do this transition in reverse?*/
 }
 
