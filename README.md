@@ -2,3 +2,4 @@
 
 A website for / about my current job in the classical music sector.
 
+![homepage](assets/homepage.png)
