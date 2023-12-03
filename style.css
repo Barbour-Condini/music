@@ -44,7 +44,7 @@ footer {
 a:link {
     color:              rgb(247, 233, 210);
     background-color:   transparent;
-    text-decoration:    none;
+    text-decoration:    underline;
 }
 
 a:hover {
@@ -85,7 +85,7 @@ section#about {
     margin:             auto;
 }
 
-#donors {
+.no-bulletpoints {
     list-style-type:    none;
     padding:            0px;
 }
