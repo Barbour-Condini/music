@@ -13,6 +13,7 @@ h1 {
     max-width: 90%;
 }
 
+/* nav bar */
 ul#nav {
     list-style-type:    none;
     padding:            0px;
@@ -31,7 +32,7 @@ ul#nav li a:link, ul#nav li a:visited {
     justify-content:    space-evenly;
 }
 
-ul#nav li a:hover, div >a:hover {
+ul#nav li a:hover, ul li a:hover, div >a:hover {
     color:              rgb(211, 132, 58);
     transform:          scale(2.05);
     transition:         0.5s;
@@ -126,8 +127,17 @@ section#about {
 
 /* media */
 
+/* center the media list items */
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
 /* make the thumbnail positioning responsive with flexbox */
-#all-media {
+/* #all-media {
     display:        flex;
     flex-wrap:      wrap;
     justify-content: space-evenly;
@@ -141,7 +151,7 @@ section#about {
     border-style:   none;
     margin:         auto;
     max-width:      95%;
-}
+} */
 
 /* gallery */
 
