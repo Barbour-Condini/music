@@ -137,7 +137,7 @@ li {
 }
 
 /* make the thumbnail positioning responsive with flexbox */
-/* #all-media {
+#all-media {
     display:        flex;
     flex-wrap:      wrap;
     justify-content: space-evenly;
@@ -146,12 +146,22 @@ li {
 }
 
 .media-clip {
+    /* border:         2px yellow solid; */
     padding:        40px 10px;
     border-radius:  15px;
-    border-style:   none;
     margin:         auto;
     max-width:      95%;
-} */
+    flex-basis:     450px;
+    height:         253px;
+}
+
+.media-clip img {
+    max-width: 100%;
+}
+
+.media-clip a:link { /* to remove less specific underline styling*/
+    text-decoration: none;
+}
 
 /* gallery */
 
