@@ -14,24 +14,21 @@ function plusSlides(n) {
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
-  // make the nav buttons visible when a thumbnail is clicked:
-  var navbuttons = document.getElementById('nav-buttons');
+  let navbuttons = document.getElementById('nav-buttons');
   navbuttons.style.display = 'block';
-  // create a gap btwn the bottom of the main slide and the thumbnails:
-  // (change bottom margin from 10px to 100px)
-  var captionContainer = document.getElementById('caption-container');
+  let captionContainer = document.getElementById('caption-container');
   captionContainer.style.margin = '2px auto 100px auto';
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
   console.log(slides);
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
   
-  if (n > slides.length) {slideIndex = 1} //this gets the slideshow to loop right
-  if (n < 1) {slideIndex = slides.length} // gets the slideshow to loop left
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length} 
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
