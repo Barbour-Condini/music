@@ -155,8 +155,14 @@ li {
     height:         253px;
 }
 
+.media-clip:hover {
+    transform:          scale(1.05);
+    transition:         0.5s ease-in-out;
+}
+
 .media-clip img {
     max-width: 100%;
+    border-radius: 10px;
 }
 
 .media-clip a:link { /* to remove less specific underline styling*/
