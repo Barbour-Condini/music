@@ -1,9 +1,5 @@
 # [charlottebarbourcondini.co.uk](https://charlottebarbourcondini.co.uk/index.html)
 
-A website about my music projects.
-
-## Roadmap
-- Combine media and gallery pages (integrate gallery into media page)
-- Compress images to reduce page sizes
+A site about my music projects.
 
 ![homepage](assets/homepage.png)
