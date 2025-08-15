@@ -1,0 +1,170 @@
+/* universal styling */
+body {
+    background-color: rgba(0, 0, 0, 0.92);
+    color:            rgb(219, 200, 166);
+    text-align:         center;
+    font-size:          auto;
+    font-family:        "Montserrat", sans-serif;
+    margin:             auto;
+}
+
+h1 {
+    margin: 40px auto 0 auto;
+    max-width: 90%;
+}
+
+/* nav bar */
+ul#nav {
+    list-style-type:    none;
+    padding:            0px;
+    margin:             0px;
+}
+
+ul#nav li {
+    display:            inline;
+    padding:            0px 10px;
+}
+
+ul#nav li a:link, ul#nav li a:visited {
+    text-decoration:    none;
+    color:              rgb(219, 200, 166);
+    line-height:        30px;
+    justify-content:    space-evenly;
+}
+
+ul#nav li a:hover, ul li a:hover, div >a:hover {
+    color:              rgb(211, 132, 58);
+    transform:          scale(2.05);
+    transition:         0.5s;
+}
+
+footer {
+    font-size:          0.8em;
+}
+
+a:link {
+    color:              rgb(247, 233, 210);
+    background-color:   transparent;
+    text-decoration:    underline;
+}
+
+a:hover {
+    color:              rgb(211, 132, 58);
+    transition:         0.5s;
+    text-decoration:    none;
+}
+
+a:visited {
+    color:              rgb(247, 233, 210);
+    text-decoration:    none;
+}
+
+ul#nav > li > a#home, ul#nav > li > a#about, ul#nav > li > a#ensembles, 
+ul#nav > li >a#media, ul#nav > li > a#gallery, ul#nav > li > a#contact {
+    color:               rgb(211, 132, 58);
+}
+
+footer {
+    max-width:  80%;
+    margin:     auto;
+}
+
+
+/* home section */
+#home-image {
+    max-width: 80%;
+    width: 1000px;
+    display: block;
+    margin: 25px auto;
+}
+
+/* about section */
+section#about {
+    text-align:         auto;
+    padding:            20px 40px;
+    max-width:          800px;
+    margin:             auto;
+}
+
+.no-bulletpoints {
+    list-style-type:    none;
+    padding:            0px;
+}
+
+#about-image {
+    border-radius:  50%;
+    width:          30%;
+    min-width:      200px;
+}
+
+/* ensembles */
+.ensemble-logo {
+    max-width:      30%;
+    display:        block;
+    margin:         40px auto 20px auto;
+}
+
+#all-ensembles {
+    text-align:         auto;
+    padding:            0 20px 40px;
+    max-width:          600px;
+    margin:             auto;
+}
+
+#parandrus-logo {
+    border-radius:  50%;
+    min-width:      150px;
+    margin-top:     20px;
+}
+
+#chineke-logo {
+    max-width:      140px;
+}
+
+#bandwidth-logo {
+    min-width:      170px;
+}
+
+/* media */
+
+/* center the media list items */
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* make the thumbnail positioning responsive with flexbox */
+#all-media {
+    display:        flex;
+    flex-wrap:      wrap;
+    justify-content: space-evenly;
+    margin:         0px auto;
+    max-width:      90%;
+}
+
+.media-clip {
+    /* border:         2px yellow solid; */
+    padding:        40px 10px;
+    border-radius:  15px;
+    margin:         auto;
+    max-width:      95%;
+    flex-basis:     450px;
+    height:         253px;
+}
+
+.media-clip:hover {
+    transform:          scale(1.05);
+    transition:         0.5s ease-in-out;
+}
+
+.media-clip img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.media-clip a:link { /* to remove less specific underline styling*/
+    text-decoration: none;
+}
